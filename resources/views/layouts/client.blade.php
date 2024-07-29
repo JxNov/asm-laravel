@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        Pustok - Book Store
+        @section('title')
+            {{ config('app.name') }}
+        @show
     </title>
     @vite('resources/css/app.css')
     <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/images/favicon.ico') }}">

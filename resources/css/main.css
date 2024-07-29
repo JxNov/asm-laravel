@@ -49,7 +49,7 @@
 |	|___ Checkout
 |	|___ Contact
 |	|___ Compare
-|	|___ My-account
+|	|___ My-profile
 |	|___ Login-register
 |	|___ About
 |	|___ Faq
@@ -28206,7 +28206,7 @@ p.form-messege.error {
   }
 }
 
-/*>>>>>>>> My-account <<<<<<<<<*/
+/*>>>>>>>> My-profile <<<<<<<<<*/
 .myaccount-tab-menu {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

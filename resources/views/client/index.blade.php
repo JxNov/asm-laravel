@@ -1,6 +1,204 @@
 @extends('layouts.client')
 
+@section('title')
+    @parent
+    | Book Store
+@endsection
+
 @section('content')
+    <!--=================================
+Hero Area
+===================================== -->
+    <section class="hero-area hero-slider-2">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-lg-8">
+                    <div class="sb-slick-slider"
+                         data-slick-setting='{
+                                                                "autoplay": true,
+                                                                "autoplaySpeed": 8000,
+                                                                "slidesToShow": 1,
+                                                                "dots":true
+                                                                }'>
+                        <div class="single-slide bg-image bg-position-left bg-position-lg-center"
+                             data-bg="{{Vite::asset('resources/images/bg-images/home-2-slider-1.jpg')}}">
+                            <div class="home-content text-left text-md-center pl--30 pl-md--0">
+                                <div class="row">
+                                    <div class="col-lg-7 col-xl-5 col-md-6 col-sm-6">
+                                        <span class="title-small">Beautifully Designed</span>
+                                        <h2>INSTA</h2>
+                                        <p>Cover up front of book and
+                                            <br>leave summary</p>
+                                        <a href="shop-grid.html" class="btn btn-outlined--primary">
+                                            Shop Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide bg-image"
+                             data-bg="{{Vite::asset('resources/images/bg-images/home-2-slider-2.jpg')}}">
+                            <div class="home-content pl--30">
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <span class="title-mid">Book Mockup</span>
+                                        <h2 class="h2-v2">Hardcover.</h2>
+                                        <p>Cover up front of book and
+                                            <br>leave summary</p>
+                                        <a href="shop-grid.html" class="btn btn-outlined--primary">
+                                            Shop Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt--30 mt-lg--0">
+                    <div class="sb-slick-slider hero-products-group-slider product-border-reset"
+                         data-slick-setting='{
+                                            "autoplay": true,
+                                            "autoplaySpeed": 8000,
+                                            "slidesToShow": 1,
+                                            "rows":2
+                                        }'
+                         data-slick-responsive='[
+                                            {"breakpoint":992, "settings": {"slidesToShow": 2,"rows":2} },
+                                            {"breakpoint":768, "settings": {"slidesToShow": 1} },
+                                         {"breakpoint":490, "settings": {"slidesToShow": 1} }
+                                    ]'>
+                        <div class="single-slide">
+                            <div class="product-card card-style-list">
+                                <div class="card-image">
+                                    <img src="{{ Vite::asset('resources/images/products/product-1.jpg') }}" alt="">
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="product-header">
+                                        <a href="#" class="author">
+                                            Gpple
+                                        </a>
+                                        <h3><a href="product-details.html">Apple iPad with Retina Display
+                                                MD510LL/A</a></h3>
+                                    </div>
+                                    <div class="price-block">
+                                        <span class="price">£51.20</span>
+                                        <del class="price-old">£51.20</del>
+                                        <span class="price-discount">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="product-card card-style-list">
+                                <div class="card-image">
+                                    <img src="{{ Vite::asset('resources/images/products/product-2.jpg') }}" alt="">
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="product-header">
+                                        <a href="#" class="author">
+                                            Hpple
+                                        </a>
+                                        <h3><a href="product-details.html">Do You Really Need It? This Will Help
+                                                You</a></h3>
+                                    </div>
+                                    <div class="price-block">
+                                        <span class="price">£51.20</span>
+                                        <del class="price-old">£51.20</del>
+                                        <span class="price-discount">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="product-card card-style-list">
+                                <div class="card-image">
+                                    <img src="{{ Vite::asset('resources/images/products/product-3.jpg') }}" alt="">
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="product-header">
+                                        <a href="#" class="author">
+                                            Fpple
+                                        </a>
+                                        <h3><a href="product-details.html">Here Is A Quick Cure For BOOK This Will
+                                                Help</a></h3>
+                                    </div>
+                                    <div class="price-block">
+                                        <span class="price">£51.20</span>
+                                        <del class="price-old">£51.20</del>
+                                        <span class="price-discount">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="product-card card-style-list">
+                                <div class="card-image">
+                                    <img src="{{ Vite::asset('resources/images/products/product-4.jpg') }}" alt="">
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="product-header">
+                                        <a href="#" class="author">
+                                            Epple
+                                        </a>
+                                        <h3><a href="product-details.html">7 and a Half Very Simple Things You Can
+                                                Do</a></h3>
+                                    </div>
+                                    <div class="price-block">
+                                        <span class="price">£51.20</span>
+                                        <del class="price-old">£51.20</del>
+                                        <span class="price-discount">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="product-card card-style-list">
+                                <div class="card-image">
+                                    <img src="{{ Vite::asset('resources/images/products/product-5.jpg') }}" alt="">
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="product-header">
+                                        <a href="#" class="author">
+                                            Ypple
+                                        </a>
+                                        <h3><a href="product-details.html">BOOK: Do You Really Need It? This Will
+                                                Help You</a></h3>
+                                    </div>
+                                    <div class="price-block">
+                                        <span class="price">£51.20</span>
+                                        <del class="price-old">£51.20</del>
+                                        <span class="price-discount">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="product-card card-style-list">
+                                <div class="card-image">
+                                    <img src="{{ Vite::asset('resources/images/products/product-7.jpg') }}" alt="">
+                                </div>
+                                <div class="product-card--body">
+                                    <div class="product-header">
+                                        <a href="#" class="author">
+                                            Wpple
+                                        </a>
+                                        <h3><a href="product-details.html">Here Is A Quick Cure For BOOK This Will
+                                                Help</a></h3>
+                                    </div>
+                                    <div class="price-block">
+                                        <span class="price">£51.20</span>
+                                        <del class="price-old">£51.20</del>
+                                        <span class="price-discount">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--=================================
     Home Features Section
     ===================================== -->
@@ -130,10 +328,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -171,10 +372,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -214,10 +418,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -255,10 +462,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -299,10 +509,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -340,10 +553,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -381,10 +597,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -422,10 +641,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -463,10 +685,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -504,10 +729,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -545,10 +773,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -586,10 +817,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-12.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-12.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -643,10 +877,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -684,10 +921,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -727,10 +967,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -768,10 +1011,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -812,10 +1058,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -853,10 +1102,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -894,10 +1146,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -935,10 +1190,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -976,10 +1234,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1017,10 +1278,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1058,10 +1322,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1099,10 +1366,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1156,10 +1426,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1197,10 +1470,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1240,10 +1516,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1281,10 +1560,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1325,10 +1607,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1366,10 +1651,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1407,10 +1695,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1448,10 +1739,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1489,10 +1783,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1530,10 +1827,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1571,10 +1871,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1613,10 +1916,13 @@
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-12.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-12.jpg')}}"
+                                                 alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
-                                                    <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                    <img
+                                                        src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                        alt="">
                                                 </a>
                                                 <div class="hover-btns">
                                                     <a href="cart.html" class="single-btn">
@@ -1682,10 +1988,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -1728,10 +2037,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -1772,10 +2084,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -1816,10 +2131,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -1860,10 +2178,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -1904,10 +2225,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -1948,10 +2272,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-13.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-13.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -1985,7 +2312,9 @@
                         </div>
                         <div class="single-side">
                             <a href="#" class="promo-image promo-overlay">
-                                <img src="{{Vite::asset('resources/images/bg-images/promo-banner-small-with-text.jpg')}}" alt="">
+                                <img
+                                    src="{{Vite::asset('resources/images/bg-images/promo-banner-small-with-text.jpg')}}"
+                                    alt="">
                             </a>
                         </div>
                     </div>
@@ -2012,7 +2341,8 @@
                                 <div class="single-slide">
                                     <div class="product-card card-style-list">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                 alt="">
                                         </div>
                                         <div class="product-card--body">
                                             <div class="product-header">
@@ -2033,7 +2363,8 @@
                                 <div class="single-slide">
                                     <div class="product-card card-style-list">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                 alt="">
                                         </div>
                                         <div class="product-card--body">
                                             <div class="product-header">
@@ -2054,7 +2385,8 @@
                                 <div class="single-slide">
                                     <div class="product-card card-style-list">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                 alt="">
                                         </div>
                                         <div class="product-card--body">
                                             <div class="product-header">
@@ -2075,7 +2407,8 @@
                                 <div class="single-slide">
                                     <div class="product-card card-style-list">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                 alt="">
                                         </div>
                                         <div class="product-card--body">
                                             <div class="product-header">
@@ -2095,7 +2428,8 @@
                                 <div class="single-slide">
                                     <div class="product-card card-style-list">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                 alt="">
                                         </div>
                                         <div class="product-card--body">
                                             <div class="product-header">
@@ -2116,7 +2450,8 @@
                                 <div class="single-slide">
                                     <div class="product-card card-style-list">
                                         <div class="card-image">
-                                            <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                            <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                 alt="">
                                         </div>
                                         <div class="product-card--body">
                                             <div class="product-header">
@@ -2164,10 +2499,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-1.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-1.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2207,10 +2545,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2248,10 +2589,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-3.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-2.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-2.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2292,10 +2636,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2333,10 +2680,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-5.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-4.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-4.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2374,10 +2724,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2415,10 +2768,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-7.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-6.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-6.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2456,10 +2812,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2497,10 +2856,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-9.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-8.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-8.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2538,10 +2900,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2579,10 +2944,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-10.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-10.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2620,10 +2988,13 @@
                                         </div>
                                         <div class="product-card--body">
                                             <div class="card-image">
-                                                <img src="{{Vite::asset('resources/images/products/product-12.jpg')}}" alt="">
+                                                <img src="{{Vite::asset('resources/images/products/product-12.jpg')}}"
+                                                     alt="">
                                                 <div class="hover-contents">
                                                     <a href="product-details.html" class="hover-image">
-                                                        <img src="{{Vite::asset('resources/images/products/product-11.jpg')}}" alt="">
+                                                        <img
+                                                            src="{{Vite::asset('resources/images/products/product-11.jpg')}}"
+                                                            alt="">
                                                     </a>
                                                     <div class="hover-btns">
                                                         <a href="cart.html" class="single-btn">
@@ -2813,7 +3184,7 @@
             <div class="promo-wrapper promo-type-four">
                 <a href="#" class="promo-image promo-overlay bg-image"
                    data-bg="{{Vite::asset('resources/images/bg-images/promo-banner-contained.jpg')}}">
-{{--                    <img src="{{Vite::asset('resources/images/bg-images/promo-banner-contained.jpg')}}" alt="" class="w-100 h-100">--}}
+                    {{--                    <img src="{{Vite::asset('resources/images/bg-images/promo-banner-contained.jpg')}}" alt="" class="w-100 h-100">--}}
                 </a>
                 <div class="promo-text w-100 justify-content-center justify-content-md-left">
                     <div class="row w-100">
@@ -2954,19 +3325,24 @@
                                     "asNavFor": ".product-slider-nav"
                                     }'>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-1.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-1.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-2.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-2.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-3.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-3.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-4.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-4.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-5.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-5.jpg')}}"
+                                         alt="">
                                 </div>
                             </div>
                             <!-- Product Details Slider Nav -->
@@ -2983,19 +3359,24 @@
               "focusOnSelect": true
               }'>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-1.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-1.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-2.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-2.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-3.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-3.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-4.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-4.jpg')}}"
+                                         alt="">
                                 </div>
                                 <div class="single-slide">
-                                    <img src="{{Vite::asset('resources/images/products/product-details-5.jpg')}}" alt="">
+                                    <img src="{{Vite::asset('resources/images/products/product-details-5.jpg')}}"
+                                         alt="">
                                 </div>
                             </div>
                         </div>
@@ -3069,3 +3450,7 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+
+@endpush

@@ -286,7 +286,7 @@ jQuery(document).ready(function($) {
         $('.product-view-mode a').on('click', function(e) {
             e.preventDefault();
 
-            var shopProductWrap = $('.shop-product-wrap');
+            var shopProductWrap = $('.products-product-wrap');
             var viewMode = $(this).data('target');
 
             $('.product-view-mode a').removeClass('active');
@@ -367,7 +367,7 @@ jQuery(document).ready(function($) {
         $('.product-view-mode a').on('click', function(e) {
             e.preventDefault();
 
-            var shopProductWrap = $('.shop-product-wrap');
+            var shopProductWrap = $('.products-product-wrap');
             var viewMode = $(this).data('target');
 
             $('.product-view-mode a').removeClass('active');
